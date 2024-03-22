@@ -4,7 +4,8 @@ CREATE TABLE EMPLOYEE (
     Ephone VARCHAR(15),
     Email VARCHAR(100),
     Dob DATE,
-    /* BranchID INT,
+    /* 
+    BranchID INT,
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
     */
 );
