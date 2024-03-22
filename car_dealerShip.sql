@@ -15,7 +15,6 @@ CREATE TABLE Car
     InsuranceID INT,
     FOREIGN KEY (InsuranceID) REFERENCES Insurance(InsuranceID)
 );
-
 CREATE TABLE CarRegistration (
     RegDate DATE,
     RegExDate DATE,
