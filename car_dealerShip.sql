@@ -28,7 +28,7 @@ CREATE TABLE Owner(
 CREATE TABLE Associated (
   emp_ID int,
   branch_ID int,
-  licence_num VARCHAR(6),
+  licence_num VARCHAR(6) PRIMARY KEY,
   FOREIGN KEY (emp_ID) REFERENCES EMPLOYEE(EID),
   FOREIGN KEY (branch_ID) REFERENCES BRANCH(EID),
   FOREIGN KEY (licence_num) REFERENCES CAR(LicenseNumber)
