@@ -12,8 +12,6 @@ CREATE TABLE Car
     Make VARCHAR(10),
     Year YEAR,
     Model VARCHAR(49),
-    InsuranceID INT,
-    FOREIGN KEY (InsuranceID) REFERENCES Insurance(InsuranceID)
 );
 CREATE TABLE CarRegistration (
     RegDate DATE,
