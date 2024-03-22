@@ -19,3 +19,8 @@ CREATE TABLE CarRegistration (
     LicenseNumber VARCHAR(6),
     FOREIGN KEY (LicenseNumber) REFERENCES Car(LicenseNumber)
 );
+
+
+CREATE TABLE Owner(
+  OwnerID int NOT NULL PRIMARY KEY,
+  OwnerName VARCHAR(15) NOT NULL);
