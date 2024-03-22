@@ -15,3 +15,10 @@ CREATE TABLE Car
     InsuranceID INT,
     FOREIGN KEY (InsuranceID) REFERENCES Insurance(InsuranceID)
 );
+
+CREATE TABLE CarRegistration (
+    RegDate DATE,
+    RegExDate DATE,
+    LicenseNumber VARCHAR(6),
+    FOREIGN KEY (LicenseNumber) REFERENCES Car(LicenseNumber)
+);
