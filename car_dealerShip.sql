@@ -58,3 +58,11 @@ CREATE TABLE INSURANCE (
     LicenseNumber VARCHAR(100), 
     FOREIGN KEY (LicenseNumber) REFERENCES CAR(LicenseNumber)
 );
+CREATE TABLE Has (
+    OwnerID INT,
+    LicenseNumber INT,
+    percent_owned DECIMAL(5,2),
+    FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID),
+    FOREIGN KEY (LicenseNumber) REFERENCES Car(LicenseNumber),
+    PRIMARY KEY (OwnerID, LicenseNumber)
+);
