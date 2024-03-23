@@ -6,6 +6,12 @@ create table Branch(
   Address_City VARCHAR(100) NOT NULL,
   Address_State VARCHAR(50) NOT NULL,
   Address_Zipcode VARCHAR(20) NOT NULL);
+
+//adding the fk for manages relationship
+ALTER TABLE Branch
+ADD COLUMN EID INT,
+ADD CONSTRAINT Mgr_Id FOREIGN KEY (EID) REFERENCES EMPLOYEE(EID);
+
 CREATE TABLE Car
     LicenseNumber VARCHAR(6) PRIMARY KEY,
     Price DECIMAL(10,2),
