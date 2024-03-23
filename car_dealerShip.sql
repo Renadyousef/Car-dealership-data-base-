@@ -7,7 +7,7 @@ create table Branch(
   Address_State VARCHAR(50) NOT NULL,
   Address_Zipcode VARCHAR(20) NOT NULL);
 
-//adding the fk for manages relationship
+//adding the fk for manages relationship *renad
 ALTER TABLE Branch
 ADD COLUMN EID INT,
 ADD CONSTRAINT Mgr_Id FOREIGN KEY (EID) REFERENCES EMPLOYEE(EID);
